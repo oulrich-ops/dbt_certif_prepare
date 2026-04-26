@@ -1,0 +1,17 @@
+eth:
+  outputs:
+
+    ci:
+      account: MRMSFEX-MI48383
+      database: ci
+      private_key_path: "{{ env_var('DBT_PRIVATE_KEY_PATH') }}"
+      role: accountadmin
+      schema: ci_schema
+      threads: 1
+      type: snowflake
+      user: kisway
+      warehouse: COMPUTE_WH
+  target: ci
+
+
+
