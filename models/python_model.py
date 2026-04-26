@@ -7,6 +7,7 @@ def is_holiday(date_col):
     is_holiday = (date_col in french_holidays)
     return is_holiday
 
+
 def model(dbt, session):
 
     dbt.config(packages=['holidays'])
